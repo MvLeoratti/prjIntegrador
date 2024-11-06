@@ -1,0 +1,40 @@
+ """
+                elif opcao_PF==2:
+                    #Listar Pessoa Fisica
+                    if lista_pf:
+                        for cada_pf in lista_pf:
+                            print(f"Nome: {cada_pf.nome} ")
+                            print(f"CPF: {cada_pf.cpf}")
+                            print(f"Data Nascimento:  {cada_pf.dataNascimento.strftime('%d/%m/%Y')}")
+                            print(f"Imposto a Pagar: {cada_pf.calcular_imposto(cada_pf.rendimento)}")
+                            print("Digite 0 para Sair: ")
+                            input()
+                    elif opcao==4:
+                        cpf_removido = int(input("Digite o CPF que sera removido: "))
+			pessoa encontrada = False
+                        for remov in lista_pf:
+                            if cpf_removido ==cada_pf.cpf:
+                                cada_pf.remove(cpf_removido)
+				pessoa encontrada = True
+                                print("Item removido da lista")
+				break
+			    if not pessoa encontrada:
+				print("Nenhuma Pessoa Encontrada")
+				
+			    
+                    else: 
+                        print("Lista Vazia")
+                elif opcao ==0:
+                    print("Voltamos ao menu anterior! ")
+                else:
+                    print("Opcao Invalida, por favor digite uma das opcoes indicadas! ")
+                   
+                
+        elif opcao==3:
+            CNPJ = 
+            pass
+        elif opcao ==0:
+            print("Obrigado por utilizar o nosso sistema! Valeu! ")
+            break
+        else:
+            print("Opcao invlaida! ")
